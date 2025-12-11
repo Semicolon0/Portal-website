@@ -68,3 +68,7 @@ h1{
 
     cursor:pointer;    
 }
+
+audio {
+    display: none;
+}
