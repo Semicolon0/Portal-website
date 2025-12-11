@@ -22,6 +22,7 @@ h1{
         /*UNIVERSAL MENU*/
 
 #uni_menu{
+    position:fixed;
     background-color: #171d25;
     width: 100%;
     height: 9vh;
@@ -30,6 +31,7 @@ h1{
 #ap_logo{
     padding:1%;
     width:20vh;
+    height:5vh;
     cursor:pointer;
 }
 
@@ -47,11 +49,22 @@ h1{
     font-size: 3vh;
 }
 
+
         /*BODY*/
 
 #body_div{
     background-color:blue;
-    width:88vw;
+    width:80vw;
     height:100%;
-    margin-left:6vw;
+    margin-left:10vw;
+}
+
+#radio{
+    width:7vw;
+    position:fixed;
+    left:1.5vw;
+    bottom:2vw;
+
+
+    cursor:pointer;    
 }
