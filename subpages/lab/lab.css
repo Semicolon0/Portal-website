@@ -1,0 +1,21 @@
+    /*
+            --------FONT-------
+    font-family:"Roboto Condensed", sans-serif;
+
+    */
+
+            /*BODY / UNIVERSAL STUFF*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #c4c4c4;
+}
+
+h1{
+    font-family: "Roboto COndensed", sans-serif;
+}
+        /*BODY*/
