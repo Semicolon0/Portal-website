@@ -2,7 +2,7 @@
 const song = document.getElementById("radio_song")
 const radio = document.getElementById("radio")
 
-song.volume = 0.4;
+song.volume = 0.05;
 
 
 //      SONG CHANGE bruges måske senere
@@ -33,3 +33,13 @@ radio.addEventListener('click', function(){
     }
 })
 
+
+//      CAKE
+const cake = document.getElementById("cake")
+
+cake.addEventListener('click', function() {
+    cake.style.animation ="cake_is_not_real 0.2s"
+    cake.addEventListener('animationend', function() {
+        cake.remove();
+    })
+})

@@ -56,10 +56,28 @@ h1{
 #body_div1{
     position:absolute;
     top:9%;
-    background-color:blue;
+    background-color:rgb(94, 94, 94);
     width:80%;
-    height:300%;
+    height:70%;
     margin-left:10vw;
+    text-align: center;
+}
+
+#body1_text{
+    font-size: 5em;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+@keyframes cake_is_not_real {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+#cake{
+    width: 15%;
+    cursor: pointer;
+    animation-fill-mode: forwards;
 }
 
 #radio{
