@@ -35,6 +35,7 @@ radio.addEventListener('click', function(){
 
 
 //      CAKE
+
 const cake = document.getElementById("cake")
 
 cake.addEventListener('click', function() {

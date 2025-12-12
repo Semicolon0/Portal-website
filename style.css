@@ -89,7 +89,13 @@ h1{
     height:70%;
     margin-left:10%;
 
+    text-align:center;
+
     background-color:beige;
+}
+
+#lab_portal {
+    width:10%;
 }
 
 /*RADIO*/
