@@ -53,6 +53,7 @@ h1{
 
         /*BODY*/
 
+        /*BODY 1*/
 #body_div1{
     position:absolute;
     top:9%;
@@ -79,6 +80,19 @@ h1{
     cursor: pointer;
     animation-fill-mode: forwards;
 }
+
+        /*BODY 2*/
+#body_div2{
+    position:absolute;
+    top:79%;
+    width:80%;
+    height:70%;
+    margin-left:10%;
+
+    background-color:beige;
+}
+
+/*RADIO*/
 
 #radio{
     width:7vw;
