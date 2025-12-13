@@ -16,10 +16,8 @@ const lab_portal = document.getElementById("lab_portal")
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
         if (entry.isIntersecting) {
-            console.log('Portal visible');
             lab_portal.style.animation ="lab_portal_grow .5s forwards";
         } else {
-            console.log('Portal not visible');
             lab_portal.style.animation = "lab_portal_shrink .2s forwards"
         }
     })
@@ -27,6 +25,27 @@ const observer = new IntersectionObserver((entries) =>{
 
 observer.observe(lab_portal)
 
-lab_portal.addEventListener('click', function() {
-    window.location.href = "/subpages/lab/lab.html";
+//      REDIRECT CODE
+
+document.querySelectorAll('.redir_obj').forEach(function(item) {
+    item.addEventListener('click', function () {
+        const item_name = item.getAttribute('id');
+        console.log(item_name);
+        redir(item_name);
+    })
 })
+
+function redir(item){
+    switch (item) {
+        case "lab_portal":
+            window.location.href="/subpages/lab/lab.html";
+            break;
+
+        case "tob_img":
+            window.location.href="/subpages/tob/tob.html";
+            break;
+        default:
+            console.log("an error occured");
+            break;
+    }
+}
