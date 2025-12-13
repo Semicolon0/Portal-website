@@ -41,21 +41,82 @@ h1{
     position:absolute;
     left:10%;
     top: 12%;
-    transform: Rotate(17deg);
+    transform: rotate(17deg);
     text-align: center;
+    width: 40%;
 }
 
-@keyframes pgun_move{
+@keyframes move_left{
     0% {opacity: 0%; transform: rotate(-17deg) translateX(-100%);}
     100% {opacity: 100%; transform: rotate(0deg) translateX(0%);}
 }
 
-#portalgun_concept{
-    width:80%;
+@keyframes move_right{
+    0% {opacity: 0%; transform: rotate(10deg) translateX(100%);}
+    100% {opacity: 100%; transform: rotate(0deg) translateX(0%);}
+}
 
+@keyframes move_up{
+    0% {opacity: 0%; transform: rotate(-2deg) translateY(100%);}
+    100% {opacity: 100%; transform: rotate(0deg) translateY(0%);}
+}
+
+@keyframes tape_show{
+    0% {opacity: 75%; width:0%;}
+    100% {opacity: 75% ;width: 100%;}
+}
+
+#portalgun_concept{
     opacity: 0%;
-    animation-name: pgun_move;
+    animation-name: move_left;
     animation-duration: .3s;
     animation-fill-mode: forwards;
 }
+
+#glados_concept_div{
+    position:absolute;
+    right:10%;
+
+    transform: rotate(-10deg);
+}
+
+#glados_concept{
+    width:80%;
+    animation-name: move_right;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+.concept_text{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin-bottom:-2%;
+    opacity: 0%;
+    padding: 0.3em 1em;
+
+    animation-name: tape_show;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+#cake_concept_div{
+    position:absolute;
+    top:30%;
+    left:45%;
+
+    transform: rotate(2deg);
+}
+
+#cake_concept{
+    width:80%;
+    position:relative;
+    left:7%;
+
+    animation-name: move_left;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
 
