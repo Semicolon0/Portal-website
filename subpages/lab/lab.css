@@ -19,3 +19,43 @@ h1{
     font-family: "Roboto COndensed", sans-serif;
 }
         /*BODY*/
+
+                /*BODY 1*/
+#body_div1{
+    position:absolute;
+    top:9%;
+    background-color:rgb(145, 145, 145);
+    width:80%;
+    height:300%;
+    margin-left:10vw;
+    text-align: center;
+}
+
+#body1_text{
+    font-size: 5em;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+#portalgun_div{
+    position:absolute;
+    left:10%;
+    top: 12%;
+    transform: Rotate(17deg);
+    text-align: center;
+}
+
+@keyframes pgun_move{
+    0% {opacity: 0%; transform: rotate(-17deg) translateX(-100%);}
+    100% {opacity: 100%; transform: rotate(0deg) translateX(0%);}
+}
+
+#portalgun_concept{
+    width:80%;
+
+    opacity: 0%;
+    animation-name: pgun_move;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
