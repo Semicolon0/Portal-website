@@ -3,6 +3,7 @@
 const cake = document.getElementById("cake")
 
 cake.addEventListener('click', function() {
+    document.getElementById("body1_text_under").innerHTML = "That was a test. There is no cake"
     cake.style.animation ="cake_is_a_lie 0.2s"
     cake.addEventListener('animationend', function() {
         cake.remove();

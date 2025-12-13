@@ -11,6 +11,7 @@ document.querySelectorAll('.uni_item').forEach(function(item) {
 function uni_redir(item){
     switch (item) {
         case "testc_redir":
+        case "ap_logo":
             window.location.href = "/index.html";
             break;
 
