@@ -2,7 +2,7 @@
 const song = document.getElementById("radio_song")
 const radio = document.getElementById("radio")
 
-song.volume = 0.05;
+song.volume = 0.1;
 
 
 //      SONG CHANGE bruges måske senere
@@ -39,8 +39,26 @@ radio.addEventListener('click', function(){
 const cake = document.getElementById("cake")
 
 cake.addEventListener('click', function() {
-    cake.style.animation ="cake_is_not_real 0.2s"
+    cake.style.animation ="cake_is_a_lie 0.2s"
     cake.addEventListener('animationend', function() {
         cake.remove();
     })
 })
+
+//      PORTAL
+const lab_portal = document.getElementById("lab_portal")
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach(entry =>{
+        if (entry.isIntersecting) {
+            console.log('Portal visible');
+            lab_portal.style.animation ="lab_portal_grow .2s forwards";
+        } else {
+            console.log('Portal not visible');
+            lab_portal.style.animation = "lab_portal_shrink .2s forwards"
+        }
+    })
+}, {threshold: 0.0});
+
+observer.observe(lab_portal)
+

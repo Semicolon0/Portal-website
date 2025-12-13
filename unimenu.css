@@ -28,3 +28,19 @@
     margin:1.2em;
     font-size: 1.5em;
 }
+
+
+        /*RADIO*/
+
+#radio{
+    width:7vw;
+    position:fixed;
+    left:1.5vw;
+    bottom:2vw;
+
+    cursor:pointer;    
+}
+
+audio {
+    display: none;
+}

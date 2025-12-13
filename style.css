@@ -37,7 +37,7 @@ h1{
     padding-right:2em;
 }
 
-@keyframes cake_is_not_real {
+@keyframes cake_is_a_lie {
     0% {opacity: 100%;}
     100% {opacity: 0%;}
 }
@@ -67,22 +67,18 @@ h1{
     padding-right:2em;
 }
 
-#lab_portal {
-    width: 5%;
+@keyframes lab_portal_grow {
+    0% {width: 0%;}
+    100% {width: 10%;}
+}
+
+@keyframes lab_portal_shrink{
+    0% {width:10%;}
+    100% {width:0%}
+}
+
+#lab_portal{
+    width: 0%;
     cursor: pointer;
 }
 
-/*RADIO*/
-
-#radio{
-    width:7vw;
-    position:fixed;
-    left:1.5vw;
-    bottom:2vw;
-
-    cursor:pointer;    
-}
-
-audio {
-    display: none;
-}
