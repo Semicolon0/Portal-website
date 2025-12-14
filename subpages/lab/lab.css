@@ -39,6 +39,7 @@ h1{
 
 #portalgun_div{
     position:absolute;
+    width:30%;
     left:10%;
     top: 12%;
     transform: rotate(17deg);
@@ -67,6 +68,11 @@ h1{
 
 #portalgun_concept{
     opacity: 0%;
+    width:100%;
+
+    position:absolute;
+    left:5%;
+
     animation-name: move_left;
     animation-duration: .3s;
     animation-fill-mode: forwards;
@@ -74,7 +80,9 @@ h1{
 
 #glados_concept_div{
     position:absolute;
-    right:10%;
+    right:13%;
+
+    width:27%;
 
     transform: rotate(-10deg);
 }
@@ -84,6 +92,9 @@ h1{
     animation-duration: .3s;
     animation-fill-mode: forwards;
 
+    position:absolute;
+    width:100%;
+    left:5%;
     cursor: pointer;
 }
 
@@ -109,13 +120,15 @@ audio {
 #cake_concept_div{
     position:absolute;
     top:30%;
-    left:45%;
+    left:30%;
 
-    transform: rotate(2deg);
+    width:27%;
+
+    transform: rotate(3deg);
 }
 
 #cake_concept{
-    width:40%;
+    width:100%;
     position:relative;
     left:7%;
 
