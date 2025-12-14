@@ -43,7 +43,6 @@ h1{
     top: 12%;
     transform: rotate(17deg);
     text-align: center;
-    width: 40%;
 }
 
 @keyframes move_left{
@@ -81,10 +80,15 @@ h1{
 }
 
 #glados_concept{
-    width:80%;
     animation-name: move_right;
     animation-duration: .3s;
     animation-fill-mode: forwards;
+
+    cursor: pointer;
+}
+
+audio {
+    display:none;
 }
 
 
@@ -95,6 +99,7 @@ h1{
     margin-bottom:-2%;
     opacity: 0%;
     padding: 0.3em 1em;
+    width:50%;
 
     animation-name: tape_show;
     animation-duration: .2s;
@@ -110,7 +115,7 @@ h1{
 }
 
 #cake_concept{
-    width:80%;
+    width:40%;
     position:relative;
     left:7%;
 
