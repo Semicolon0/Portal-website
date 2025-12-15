@@ -34,28 +34,6 @@ const radio = document.getElementById("radio")
 
 song.volume = 0.1;
 
-
-//      SONG CHANGE - WHEN RADIO CONCEPT ART IS CLICKED
-
-const song_change = document.getElementById("radio_concept"); 
-still_alive = false;
-
-song_change.addEventListener('click', function(){
-    if (!still_alive) {
-        song.src = "/assets/sounds/still_alive.mp3";
-        song.play();
-        radio.src = "/assets/images/radio_on.png";
-        still_alive = true;
-    } else {
-        song.src = "/assets/sounds/portal_radio_loop.mp3";
-        still_alive = false;
-        radio.src = "/assets/images/radio_off.png"
-    }
-
-
-})
-
-
 radio.addEventListener('click', function(){
     if (song.paused){
         song.play();

@@ -17,5 +17,85 @@ body{
 
 h1{
     font-family: "Roboto COndensed", sans-serif;
+    font-size: 3em;
 }
         /*BODY*/
+
+#body_div1{
+    position:absolute;
+    top:9%;
+    background-color: #FFDAB9;
+    width:80%;
+    height:80%;
+    margin-left:10vw;
+    text-align: center;
+}
+
+#orange_box{
+    height:25%;
+    position:relative;
+    top:10%;
+
+    cursor: pointer;
+}
+
+#orange_box:hover{
+    height:27%;
+    opacity: 90%;
+}
+
+#gaming{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:4%;
+    gap:10%;
+    width:auto;
+    height:40%;
+
+    position:relative;
+}
+
+.cover_art{
+    height:100%;
+    cursor:pointer;
+    border-radius: 1em;
+}
+
+.cover_art:hover{
+    opacity:85%;
+}
+
+@keyframes hl2_ani{
+    0% {height: 0%; transform: rotate(360deg); position: relative; left: 12%; top: 100%;}
+    100% {height: 100%; transform: rotate(0deg); position: relative; left: 0%; top: 0%;}
+}
+
+#hl2{
+    animation-name: hl2_ani;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tf2_ani{
+    0% {height: 0%; transform: rotate(180deg); position: relative; top: 100%;}
+    100% {height: 100%; transform: rotate(0deg); position: relative; top: 0%;}
+}
+
+#tf2{
+    animation-name: tf2_ani;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes portal_ani{
+    0% {height: 0%; transform: rotate(270deg); position:relative; left: -15%; top:100%;}
+    100% {height: 100%; transform: rotate(0); position: relative; left: 0%; top: 0%;}
+}
+
+#portal_cover{
+    animation-name: portal_ani;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
