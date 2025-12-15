@@ -265,6 +265,8 @@ audio {
     position: absolute;
     width:8%;
     top:91%;
+
+    cursor: pointer;
 }
 
         /*BOTTOM*/
