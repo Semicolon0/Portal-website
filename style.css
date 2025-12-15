@@ -1,9 +1,3 @@
-    /*
-            --------FONT-------
-    font-family:"Roboto Condensed", sans-serif;
-
-    */
-
             /*BODY / UNIVERSAL STUFF*/
 
 html, body {
@@ -16,9 +10,6 @@ body{
     margin-bottom: 51%;
 }
 
-h1{
-    font-family: "Roboto COndensed", sans-serif;
-}
         /*BODY*/
 
         /*BODY 1*/
@@ -45,9 +36,16 @@ h1{
 
 #cake{
     width: 15%;
-    cursor: pointer;
     animation-fill-mode: forwards;
+    align-self: center;
+    cursor:pointer;
+    transition: transform 0.2s ease;
 }
+
+#cake:hover{
+    transform: scale(1.05);
+}
+
 
         /*BODY 2*/
 #body_div2{
@@ -80,8 +78,15 @@ h1{
 
 #lab_portal{
     width: 0%;
-    cursor: pointer;
+    align-self: center;
+    cursor:pointer;
+    transition: transform 0.2s ease;
 }
+
+#lab_portal:hover{
+    transform: scale(1.05);
+}
+
 
         /*BODY 3*/
 #body_div3{
@@ -104,8 +109,15 @@ h1{
 #tob_img{
     width:15%;
     margin-top:2%;
+    align-self: center;
     cursor:pointer;
+    transition: transform 0.2s ease;
 }
+
+#tob_img:hover{
+    transform: scale(1.05);
+}
+
 
         /*BOTTOM*/
 #BOTTOM{

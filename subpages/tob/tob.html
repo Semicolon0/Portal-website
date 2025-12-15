@@ -13,21 +13,32 @@
     <!--UNIVERSAL MENU-->
     <div id="uni_menu">
         <div id="menu_text">
-            <img id="ap_logo" class="uni_item" src="/assets/images/aperture_logo.png" alt="The Aperture Laboratries logo. If clicked leads to the homepage/the test chamber">
-            <h1 class="uni_menu_text uni_item" id="testc_redir">Test chamber</h1>
-            <h1 class="uni_menu_text uni_item" id="rs_redir">Research</h1>
-            <h1 class="uni_menu_text uni_item" id="tob_redir"><u>The Orange Box</u></h1>
+            <a href="/index.html">
+                <img id="ap_logo" class="uni_item" src="/assets/images/aperture_logo.png" alt="The Aperture Laboratries logo. If clicked leads to the homepage/the test chamber">
+            </a>
+                <a class="uni_menu_text uni_item" id="testc_redir" href="/index.html">Test chamber</a>
+                <a class="uni_menu_text uni_item" id="rs_redir" href="/subpages/lab/lab.html">Research</a>
+                <a class="uni_menu_text uni_item" id="tob_redir" href="/subpages/tob/tob.html"><u>The Orange Box</u></a>
         </div>
     </div>
     
     <div id="body_div1">
         <h1 id="body1_text">Explore two decades of The Orange Box</h1>
         <div id="gaming">
-            <img id="hl2" class="cover_art" src="/assets/images/hl2_cover.jpg" alt="Half-Life 2 cover art">
-            <img id="tf2" class="cover_art" src="/assets/images/tf2_cover.jpg" alt="Team Fortress 2 cover art">
-            <img id="portal_cover" class="cover_art" src="/assets/images/portal_cover.jpg" alt="Portal cover art">
+            <a id="hl2" href="https://store.steampowered.com/app/220/HalfLife_2/" target="_blank">
+                <img class="cover_art" src="/assets/images/hl2_cover.jpg" alt="Half-Life 2 cover art">
+            </a>
+            <a id="tf2" href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank">
+                <img class="cover_art" src="/assets/images/tf2_cover.jpg" alt="Team Fortress 2 cover art">
+            </a>
+            <a id="portal_cover" href="https://store.steampowered.com/app/400/Portal/" target="_blank">
+                <img class="cover_art" src="/assets/images/portal_cover.jpg" alt="Portal cover art">
+            </a>
         </div>
-        <img id="orange_box" src="/assets/images/orange_box.png">
+
+        <a href="https://store.steampowered.com/sub/469/" target="_blank">
+            <img id="orange_box" src="/assets/images/orange_box.png">
+        </a>
     </div>
 
     <!--RADIO-->    
@@ -39,5 +50,4 @@
 
 
     <script src="/unimenu.js"></script>
-    <script src="tob.js"></script>
 </body>

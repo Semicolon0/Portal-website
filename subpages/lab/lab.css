@@ -241,10 +241,10 @@ audio {
 
 #glados_concept2_div{
     position:absolute;
-    top:70%;
-    right:15%;
+    top:75%;
+    right:17%;
 
-    width:20%;
+    width:15%;
 
     transform: rotate(1deg);
 }
@@ -264,7 +264,7 @@ audio {
 #portal_redir{
     position: absolute;
     width:8%;
-    top:91%;
+    top:88%;
 
     cursor: pointer;
 }

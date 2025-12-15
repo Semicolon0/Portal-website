@@ -3,7 +3,7 @@
 const cake = document.getElementById("cake")
 
 cake.addEventListener('click', function() {
-    document.getElementById("body1_text_under").innerHTML = "That was a test. There is no cake"
+    document.getElementById("body1_text_under").innerHTML = "That was a test. There is no cake. Yet."
     cake.style.animation ="cake_is_a_lie 0.2s"
     cake.addEventListener('animationend', function() {
         cake.remove();
@@ -24,28 +24,3 @@ const observer = new IntersectionObserver((entries) =>{
 }, {threshold: 0.1});
 
 observer.observe(lab_portal)
-
-//      REDIRECT CODE
-
-document.querySelectorAll('.redir_obj').forEach(function(item) {
-    item.addEventListener('click', function () {
-        const item_name = item.getAttribute('id');
-        console.log(item_name);
-        redir(item_name);
-    })
-})
-
-function redir(item){
-    switch (item) {
-        case "lab_portal":
-            window.location.href="/subpages/lab/lab.html";
-            break;
-
-        case "tob_img":
-            window.location.href="/subpages/tob/tob.html";
-            break;
-        default:
-            console.log("an error occured");
-            break;
-    }
-}
