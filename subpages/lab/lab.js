@@ -29,3 +29,23 @@ song_change.addEventListener('click', function(){
 
 
 })
+
+//      TURRET SOUNDS
+
+const turret_vo = document.getElementById("turret_audio");
+const turret = document.getElementById("turret_concept");
+
+const turretVOLines = [
+    "/assets/sounds/turret1.wav",
+    "/assets/sounds/turret2.wav",
+    "/assets/sounds/turret3.wav",
+    "/assets/sounds/turret4.wav"
+];
+
+turret.addEventListener('click', function() {
+    const randomIndex = Math.floor(Math.random() * turretVOLines.length);
+    
+    turret_vo.src = turretVOLines[randomIndex];
+    turret_vo.volume = 0.2;
+    turret_vo.play();
+});

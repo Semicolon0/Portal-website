@@ -96,6 +96,7 @@ h1{
     width:100%;
     left:5%;
     cursor: pointer;
+    transition: filter 0.3s ease;
 }
 
 audio {
@@ -177,6 +178,7 @@ audio {
     animation-fill-mode: forwards;
 
     cursor: pointer;
+    transition: filter 0.3s ease;
 }
 
 #turret_concept_div{
@@ -197,6 +199,13 @@ audio {
     animation-name: move_left;
     animation-duration: .3s;
     animation-fill-mode: forwards;
+
+    cursor:pointer;
+    transition: filter 0.3s ease;
+}
+
+#turret_concept:hover, #radio_concept:hover, #glados_concept:hover{
+    filter: drop-shadow(0 0 1em #17bfe9);
 }
 
 #test_chamber_concept_div{
@@ -267,6 +276,12 @@ audio {
     top:88%;
 
     cursor: pointer;
+        transition: transform 0.2s ease;
+}
+
+#portal_redir:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 .4em #f88431);
 }
 
         /*BOTTOM*/
