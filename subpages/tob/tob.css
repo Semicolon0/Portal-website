@@ -37,11 +37,12 @@ h1{
     top:10%;
 
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 #orange_box:hover{
-    height:27%;
     opacity: 90%;
+    transform: scale(1.05);
 }
 
 #gaming{
@@ -61,10 +62,12 @@ h1{
     height:100%;
     cursor:pointer;
     border-radius: 1em;
+    transition: transform 0.2s ease;
 }
 
 .cover_art:hover{
     opacity:85%;
+    transform: scale(1.05);
 }
 
 #gaming a {

@@ -41,7 +41,7 @@ h1{
     position:absolute;
     width:30%;
     left:10%;
-    top: 12%;
+    top: 15%;
     transform: rotate(17deg);
     text-align: center;
 }
@@ -276,7 +276,7 @@ audio {
     top:88%;
 
     cursor: pointer;
-        transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 #portal_redir:hover{
