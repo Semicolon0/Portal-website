@@ -43,6 +43,7 @@ h1{
 #orange_box:hover{
     opacity: 90%;
     transform: scale(1.05);
+    filter: drop-shadow(0 0 .4em #17bfe9);
 }
 
 #gaming{
@@ -68,6 +69,7 @@ h1{
 .cover_art:hover{
     opacity:85%;
     transform: scale(1.05);
+    filter: drop-shadow(0 0 .4em #17bfe9);
 }
 
 #gaming a {
