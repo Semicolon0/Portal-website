@@ -69,6 +69,7 @@ h1, a{
 
 #radio:hover{
     transform: scale(1.05);
+    filter: drop-shadow(0 0 .4em #17bfe9);
 }
 
 audio {
