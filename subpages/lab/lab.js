@@ -17,14 +17,14 @@ still_alive = false;
 
 song_change.addEventListener('click', function(){
     if (!still_alive) {
-        song.src = "/assets/sounds/still_alive.mp3";
+        song.src = basePath + "assets/sounds/still_alive.mp3";
         song.play();
-        radio.src = "/assets/images/radio_on.png";
+        radio.src = basePath + "assets/images/radio_on.png";
         still_alive = true;
     } else {
-        song.src = "/assets/sounds/portal_radio_loop.mp3";
+        song.src = basePath + "assets/sounds/portal_radio_loop.mp3";
         still_alive = false;
-        radio.src = "/assets/images/radio_off.png"
+        radio.src = basePath + "assets/images/radio_off.png"
     }
 
 
@@ -36,10 +36,10 @@ const turret_vo = document.getElementById("turret_audio");
 const turret = document.getElementById("turret_concept");
 
 const turretVOLines = [
-    "/assets/sounds/turret1.wav",
-    "/assets/sounds/turret2.wav",
-    "/assets/sounds/turret3.wav",
-    "/assets/sounds/turret4.wav"
+    basePath + "assets/sounds/turret1.wav",
+    basePath + "assets/sounds/turret2.wav",
+    basePath + "assets/sounds/turret3.wav",
+    basePath + "assets/sounds/turret4.wav"
 ];
 
 turret.addEventListener('click', function() {
